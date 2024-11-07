@@ -1,3 +1,27 @@
-*{
-    padding: 5px;
+a {
+    color: inherit;
+    text-decoration: none;
+    padding-left: 10px;
+  
+  
+  }
+.h-container{
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 1 rem;
+    padding-bottom: 1 rem;
+    color: var(--secondary);
+    /* align-items: center; */
+  }
+
+  .h-wrapper{
+    background: var(--black);
+    color: white;
+  }
+  .h-menu{
+    gap:2rem;
+  }
+.h-menu>*:hover{
+  cursor: pointer;
 }
+  

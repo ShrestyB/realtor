@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+.rest{
+  background-image: url('C:\\Projects\\React-KK\\Real Estate\\realtor\\public\\images.jpg');
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

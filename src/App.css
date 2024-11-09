@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  position: relative;
+  overflow-x:clip;
+}
+
+.App>:nth-child(1){
+  background-color: var(--black);
+  position: relative;
+
 }
 .rest{
   background-image: url('C:\\Projects\\React-KK\\Real Estate\\realtor\\public\\images.jpg');
@@ -37,4 +45,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.white-gradient{
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+background: rgba(255,255,255,0.522);
+filter: blur(100px);
+border-radius: 100px;
 }

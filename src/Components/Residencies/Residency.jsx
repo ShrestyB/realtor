@@ -16,6 +16,7 @@ const Residency = () => {
 
             <Swiper {... sliderSettings}>
                 {/* destructruing the slider settings into parent component */}
+                <SliderButtons/>
                 {data.map((card, i) => (
                     <SwiperSlide key={i}>
                         <div className=' flexColStart r-card'>
@@ -41,3 +42,16 @@ const Residency = () => {
 }
 
 export default Residency
+
+const SliderButtons = () => {
+    const swiper = useSwiper();
+    return (
+      <div className="flexCenter r-buttons">
+        <button onClick={() => swiper.slidePrev()} className="r-button">&lt;
+        </button>
+        <button onClick={() => swiper.slideNext()} className="r-button">
+          &gt;
+        </button>
+      </div>
+    );
+  };

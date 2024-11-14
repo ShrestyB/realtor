@@ -3,6 +3,7 @@ import Companies from './Components/Companies/Companies';
 import Headers from './Components/Headers/Headers';
 import Hero from './Components/Hero/Hero';
 import Residency from './Components/Residencies/Residency';
+import Values from './Components/Values/Values';
 function App() {
     return(
         <>
@@ -15,6 +16,7 @@ function App() {
         </div>
         {/* <Companies/> */}
         <Residency/>
+        <Values/>
         </div>
 
         </>

@@ -2,6 +2,7 @@ import './App.css';
 import Companies from './Components/Companies/Companies';
 import Headers from './Components/Headers/Headers';
 import Hero from './Components/Hero/Hero';
+import Residency from './Components/Residencies/Residency';
 function App() {
     return(
         <>
@@ -13,6 +14,7 @@ function App() {
             <Hero/>
         </div>
         {/* <Companies/> */}
+        <Residency/>
         </div>
 
         </>

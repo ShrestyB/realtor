@@ -33,11 +33,15 @@
     scale: 1.025;
     cursor:pointer;
     background: linear-gradient(
-        180 deg,
-        rgba(255,255,255,0)0%,
+        180deg,
+        rgba(255,255,255,0) 0%,
         rgba(126,160,255,046) 217.91%
 
     );
 
     box-shadow: 0px,72px,49px,-51px,rgba(136,160,255,0.21);
+}
+.swiper-horizonntal{
+    overflow: visible;
+
 }

@@ -11,6 +11,7 @@ import{
 import 'react-accessible-accordion/dist/fancy-example.css';
 import {MdOutlineArrowDropDown} from 'react-icons/md';
 import './Values.css' 
+import data from '../../utils/accordion'
 
 const Values = () => {
   return (
@@ -27,6 +28,31 @@ const Values = () => {
           <span className='secondaryText'> We always ready to help by providijng the best services for you.
             <br />
             We beleive a good blace to live can make your life better</span>
+            <Accordion 
+            allowMultipleExpanded={false}
+            preExpanded={[0]}>
+              {/*Accordions push down content to make room for themselves, unlike dropdowns which lay over other content.   */}
+
+              {
+                data.map((item, index) => {
+                  return (
+                    <AccordionItem className='accordionItem' key={index} uuid={index}>
+                      <AccordionItemHeading>
+                        <AccordionItemButton className='flexCenter accordionButton'>
+                          <div className="flexCenter icon">{item.icon}</div>
+                          <span className="primaryText">{item.heading}</span>
+                          <div className="flexCenter icon">
+                            <MdOutlineArrowDropDown size={20}/>
+                          </div>
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel>
+                        <div className="secondaryText">{item.detail}</div>
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  );
+                } )}
+            </Accordion>
         </div>
       </div>
     </section>
